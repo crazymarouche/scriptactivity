@@ -1,0 +1,19 @@
+#!/bin/bash
+USERNAME=$(whoami)
+echo "Your name is:"  $USERNAME
+
+
+DATE=`date +%Y.%m.%d`
+echo "Today is:"  $DATE
+
+TIME=`date +%T%Z`
+echo "Your actual time is:" $TIME
+
+DIR=$(pwd)
+echo "You actual working directory is:" $DIR
+
+NUMFILE=$(ls | wc -l)
+echo "Number of file is in your actual directory is:" $NUMFILE
+
+BIGFILE=$(du -sh *)
+echo "The biggest file is:" $BIGFILE
