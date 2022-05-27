@@ -1,0 +1,19 @@
+DATE=$(date +%Y.%m.%d)
+
+cd  ~/activity2  
+
+ls   |while read line 
+do         
+    VAR=`echo $line`
+   if [[ $VAR == "act"* ]];
+   then
+continue 
+mv $VAR $VAR.$DATE
+   
+    
+else
+     echo $line
+
+ 
+fi
+done

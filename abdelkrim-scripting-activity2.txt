@@ -1,0 +1,9 @@
+#!/bin/sh
+DATE=$(date +%Y.%m.%d)
+cd  ~/activity2  # Be in rep 
+
+for  activ  in *
+ do 
+ mv $activ  $activ.$DATE
+done 
+
