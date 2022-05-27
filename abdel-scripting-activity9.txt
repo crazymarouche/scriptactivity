@@ -1,0 +1,20 @@
+#!/bin/bash 
+
+echo "Enter your file name " 
+read  filename 
+cd ~/
+if  test -f "$filename" 
+  then
+      echo  " Error file exist "
+      exit 1
+  else
+   touch ~/$filename
+   echo "File" $filename "has created"
+ 
+fi
+
+
+
+
+
+
