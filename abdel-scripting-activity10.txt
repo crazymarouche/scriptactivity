@@ -1,0 +1,26 @@
+#!/bin/bash
+
+echo "Enter your file name"
+read  filename
+
+cd ~/
+if  test -f "$filename"
+  then
+      echo  "Error! file" $filename "already exist "
+      exit 1
+  
+  else
+       touch ~/$filename
+
+       echo "Enter number of lines "
+       read numberlines 
+       for n in `seq "$numberlines"`
+      do 
+       randomNumbers=$(shuf -i 1-$RANDOM -n1)
+    
+       echo $randomNumbers >> ~/$filename
+       
+      done
+fi
+
+
