@@ -1,0 +1,77 @@
+#!/bin/bash 
+
+echo "**Please Answer with Yes or No**"
+echo "1-Paris is the capital of Italy "
+read -r answer1 
+if  [[ $answer1 =~ ^([yY][eE][sS]|[yY])$ ]]; then 
+   echo  "Wrong answer"
+
+else 
+ echo "You do! Awesome." 
+fi 
+
+echo "2-Messi plays for PSG"
+read answer2
+if  [[ $answer2 =~ ^([yY][eE][sS]|[yY])$ ]]; then
+   echo "You do! Awesome."
+else
+ echo "Wrong answer"
+fi
+
+
+echo "3-Nil river located in Africa"
+read answer3
+if  [[ $answer3 =~ ^([yY][eE][sS]|[yY])$ ]]; then
+   echo "You do! Awesome."
+else
+ echo "Wrong answer"
+fi
+
+
+echo "4-Matt Demon is a British actor"
+read answer4
+if  [[ $answer4 =~ ^([Nn][Oo])$ ]]; then
+   echo "You do! Awesome."
+else
+ echo "Wrong answer"
+fi
+
+
+echo "5-Elizabeth is the queen of UK"
+read answer5
+if  [[ $answer5 =~ ^([yY][eE][sS]|[yY])$ ]]; then
+   echo "You do! Awesome."
+else
+ echo "Wrong answer"
+fi
+
+
+
+echo "6-Evrest is the highest mountain in the world"
+read answer6
+if  [[ $answer6 =~ ^([yY][eE][sS]|[yY])$ ]]; then
+   echo "You do! Awesome."
+else
+ echo "Wrong answer"
+fi
+
+
+echo "7-Instructor Chris is from Belgium"
+read answer7
+if  [[ $answer7 =~ ^([Nn][Oo])$ ]]; then
+   echo "You do! Awesome."
+else
+ echo "Wrong answer"
+fi
+
+
+echo "8-Toyota is american car"
+read answer8
+if  [[ $answer8 =~ ^([Nn][Oo])$ ]]; then
+   echo "You do! Awesome."
+else
+ echo "Wrong answer"
+fi
+
+
+
