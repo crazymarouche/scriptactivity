@@ -1,0 +1,36 @@
+#!/bin/bash
+
+echo "Enter a number for a";
+read a;
+
+if ! [[ $a =~ ^-?[0-9]+([.][0-9]+)?$ ]]; then
+echo "$a is not a number";
+exit 1 ; 
+fi
+
+echo "Enter a number for b";
+read b;
+
+if ! [[ $b =~ ^-?[0-9]+([.][0-9]+)?$ ]]; then 
+echo "$b is not a number"; 
+exit 1;
+fi
+
+if [[ $a -gt $b ]];
+then
+   echo "True";
+else
+    echo "False";
+fi;
+
+diff=$(($a - $b));       
+    if [ $diff -lt 0 ];
+    then                     
+        echo $diff     
+    else 
+        echo $diff
+     fi                       
+                   
+
+
+
