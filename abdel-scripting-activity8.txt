@@ -1,0 +1,13 @@
+#!/bin/bash
+sum=0
+
+echo "Please enter integer numbers to add, or just RETURN to end."
+
+while read -r number && [ -n "$number" ]; do
+  if [ "$number" -eq "$number" ] 2>/dev/null; then
+    sum=$((sum + number))
+    echo "Sum is: $sum"
+  else
+    echo "$number is not a valid integer. Try again..." >&2
+  fi
+done

@@ -1,0 +1,10 @@
+#!/bin/bash
+filename=$1
+while read line; do
+echo $line
+echo $line | rev 
+dude=`perl -lane 'print join " ", grep ! $seen{$_}++, @F'< $filename`
+echo $dude 
+done < $filename
+
+
